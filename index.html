@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Page</title>
+    <script type="text/javascript" src="testframework.js"></script>
+</head>
+<body>
+    
+    <button id="testbt"></button>
+
+    <script>
+
+        Tester.runTests("Sum function", [() =>{
+            Tester.isEqual(3,5);
+        },
+        () => { 
+            Tester.isEqual(5,5) 
+        }]);
+        
+    </script>
+
+</body>
+</html>
